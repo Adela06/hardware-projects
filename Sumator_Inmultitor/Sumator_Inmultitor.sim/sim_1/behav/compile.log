@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.srcs/sources_1/new/fullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.srcs/sources_1/new/carryPropagateAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity carryPropagateAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.srcs/sources_1/new/carrySave8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity carrySave8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.srcs/sources_1/new/carrySaveAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity carrySaveAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.srcs/sources_1/new/wallaceTree.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wallaceTree
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.srcs/sources_1/new/muxSelectie.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity muxSelectie

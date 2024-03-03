@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Oct 29 17:22:12 2023
+# Process ID: 6992
+# Current directory: D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.runs/impl_1
+# Command line: vivado.exe -log muxSelectie.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source muxSelectie.tcl -notrace
+# Log file: D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.runs/impl_1/muxSelectie.vdi
+# Journal file: D:/AN3/SSC/Laborator4_add_multiply/Sumator_Inmultitor/Sumator_Inmultitor.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source muxSelectie.tcl -notrace

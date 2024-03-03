@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1698613115">
+  <File Type="PWROPT-DRC" Name="muxSelectie_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="muxSelectie_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="muxSelectie_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="muxSelectie_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="muxSelectie.tcl"/>
+  <File Type="OPT-HWDEF" Name="muxSelectie.hwdef"/>
+  <File Type="RDI-RDI" Name="muxSelectie.vdi"/>
+  <File Type="OPT-DCP" Name="muxSelectie_opt.dcp"/>
+  <File Type="OPT-DRC" Name="muxSelectie_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="muxSelectie_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="muxSelectie_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="muxSelectie_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="muxSelectie_placed.dcp"/>
+  <File Type="PLACE-IO" Name="muxSelectie_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="muxSelectie_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="muxSelectie_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="muxSelectie_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="muxSelectie_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="muxSelectie_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="muxSelectie_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="muxSelectie_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="muxSelectie_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="muxSelectie_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="muxSelectie_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="muxSelectie_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="muxSelectie_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="muxSelectie_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="muxSelectie_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="muxSelectie_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="muxSelectie_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="muxSelectie_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="muxSelectie.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="muxSelectie_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="muxSelectie.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="muxSelectie_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="muxSelectie.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="muxSelectie_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="muxSelectie.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="muxSelectie_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="muxSelectie_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="muxSelectie_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="muxSelectie_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="muxSelectie_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="muxSelectie_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="muxSelectie_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="muxSelectie_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="muxSelectie_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="muxSelectie_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="muxSelectie_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="muxSelectie_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="muxSelectie_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="muxSelectie_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="muxSelectie_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="muxSelectie.bit"/>
+  <File Type="BITSTR-RBT" Name="muxSelectie.rbt"/>
+  <File Type="BITSTR-NKY" Name="muxSelectie.nky"/>
+  <File Type="BITSTR-BMM" Name="muxSelectie_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="muxSelectie.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="muxSelectie.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/fullAdder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/carryPropagateAdder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/carrySave8bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/carrySaveAdder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/wallaceTree.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/muxSelectie.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/testare.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="muxSelectie"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constrangeri.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
