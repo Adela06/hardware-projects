@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/fullAdder.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/c2.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/Adder.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/shRight.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/shLeft.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/scadere.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/countUp.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/countDown.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/muxSelectie.vhd"
+vhdl xil_defaultlib  "../../../ProiectUAL.srcs/sources_1/new/testare.vhd"
+
+# Do not sort compile order
+nosort

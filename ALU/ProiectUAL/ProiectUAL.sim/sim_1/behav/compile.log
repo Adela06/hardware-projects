@@ -1,0 +1,20 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/fullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/c2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity c2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/Adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/shRight.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shRight
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/shLeft.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shLeft
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/scadere.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity scadere
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/countUp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity countUp
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/countDown.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity countDown
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/muxSelectie.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity muxSelectie
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/AN3/SSC/Proiect/ProiectUAL/ProiectUAL.srcs/sources_1/new/testare.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testare
