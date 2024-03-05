@@ -1,0 +1,365 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 15852
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat May 28 15:39:01 EEST 2022
+Time zone: 	Eastern European Standard Time (Europe/Athens)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	D:/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	adeli
+User home directory: C:/Users/adeli
+User working directory: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test
+User country: 	RO
+User language: 	ro
+User locale: 	ro_RO
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2021.2
+RDI_DATADIR: D:/Vivado/2021.2/data
+RDI_BINDIR: D:/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/adeli/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/adeli/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/adeli/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	D:/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/vivado.log
+Vivado journal file: 	C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/vivado.jou
+Engine tmp dir: 	C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/.Xil/Vivado-15852-Laptop-Adela
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2021.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2021.2
+XILINX_VIVADO: D:/Vivado/2021.2
+XILINX_VIVADO_HLS: D:/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,310 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\adeli\Desktop\PROIECT_DULAP\proiectMODIF_2\test\test.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.xpr 
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,310 MB. GUI used memory: 56 MB. Current time: 5/28/22, 3:39:02 PM EEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 75 MB (+76625kb) [00:00:47]
+// [Engine Memory]: 1,310 MB (+1221990kb) [00:00:47]
+// [GUI Memory]: 119 MB (+42156kb) [00:00:49]
+// WARNING: HEventQueue.dispatchEvent() is taking  7472 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2021.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:41 ; elapsed = 00:00:34 . Memory (MB): peak = 1576.457 ; gain = 0.000 
+// [GUI Memory]: 132 MB (+7253kb) [00:00:54]
+// Project name: test; location: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (afis_buton.vhd) elapsed time: 0.2s
+// Elapsed time: 240 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), buton_adcif : debouncer_afis(arhit_deb) (debouncer_afis.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1534 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p1 : numarator(arh_numarator) (numarator.vhd)]", 4, true); // D - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,310 MB. GUI used memory: 74 MB. Current time: 5/28/22, 4:09:03 PM EEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,310 MB. GUI used memory: 63 MB. Current time: 5/28/22, 4:39:03 PM EEST
+// Elapsed time: 3652 seconds
+selectCodeEditor("afis_buton.vhd", 325, 44); // be
+// Elapsed time: 91 seconds
+selectCodeEditor("afis_buton.vhd", 94, 278); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p1 : numarator(arh_numarator) (numarator.vhd)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p1 : numarator(arh_numarator) (numarator.vhd)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  2673 ms.
+// Elapsed time: 194 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p4 : registru_12B(arch_registru_12B) (registru_12B.vhd)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p4 : registru_12B(arch_registru_12B) (registru_12B.vhd)]", 5, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1101 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p6 : afis_ssd(arh_afis_ssd) (afis_ssd.vhd)]", 6, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p6 : afis_ssd(arh_afis_ssd) (afis_ssd.vhd)]", 6, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1120 ms.
+dismissDialog("Opening Editor"); // bA
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 1); // m
+// Elapsed time: 108 seconds
+selectCodeEditor("afis_buton.vhd", 206, 223); // be
+// Elapsed time: 23 seconds
+selectCodeEditor("afis_buton.vhd", 256, 283); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("afis_buton.vhd", 235, 282); // be
+// Elapsed time: 22 seconds
+selectCodeEditor("afis_buton.vhd", 241, 176); // be
+// Elapsed time: 25 seconds
+selectCodeEditor("afis_buton.vhd", 243, 175); // be
+selectCodeEditor("afis_buton.vhd", 448, 303); // be
+// Elapsed time: 31 seconds
+selectCodeEditor("afis_buton.vhd", 250, 155); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("afis_buton.vhd", 557, 25); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectCodeEditor("afis_buton.vhd", 240, 177); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("afis_buton.vhd", 280, 175); // be
+selectCodeEditor("afis_buton.vhd", 758, 190); // be
+selectCodeEditor("afis_buton.vhd", 757, 177); // be
+// Elapsed time: 298 seconds
+selectCodeEditor("afis_buton.vhd", 235, 176); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectCodeEditor("afis_buton.vhd", 239, 189); // be
+selectCodeEditor("afis_buton.vhd", 232, 179); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectCodeEditor("afis_buton.vhd", 249, 202); // be
+selectCodeEditor("afis_buton.vhd", 235, 200); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+selectCodeEditor("afis_buton.vhd", 437, 200); // be
+selectCodeEditor("afis_buton.vhd", 474, 200); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+selectCodeEditor("afis_buton.vhd", 433, 222); // be
+selectCodeEditor("afis_buton.vhd", 474, 74); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectCodeEditor("afis_buton.vhd", 511, 304); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+selectCodeEditor("afis_buton.vhd", 163, 327); // be
+selectCodeEditor("afis_buton.vhd", 381, 103); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+// Elapsed time: 121 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p6 : afis_ssd(arh_afis_ssd) (afis_ssd.vhd)]", 6); // D
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_ssd.vhd", 4); // m
+selectCodeEditor("afis_ssd.vhd", 470, 40); // be
+// Elapsed time: 17 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, numarator2(arh_numarator2) (numarator2.vhd)]", 2); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, numarator2(arh_numarator2) (numarator2.vhd)]", 2); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), buton_adcif : debouncer_afis(arhit_deb) (debouncer_afis.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), buton_adcif : debouncer_afis(arhit_deb) (debouncer_afis.vhd), p1 : counter16b(arh_counter) (counter16b.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1145 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 86 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 1); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 34 seconds
+selectCodeEditor("afis_buton.vhd", 543, 241); // be
+// Elapsed time: 46 seconds
+selectCodeEditor("afis_buton.vhd", 324, 187); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("afis_buton.vhd", 359, 7); // be
+selectCodeEditor("afis_buton.vhd", 331, 86); // be
+selectCodeEditor("afis_buton.vhd", 359, 93); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+// Elapsed time: 157 seconds
+selectCodeEditor("afis_buton.vhd", 162, 261); // be
+selectCodeEditor("afis_buton.vhd", 160, 283); // be
+selectCodeEditor("afis_buton.vhd", 157, 304); // be
+selectCodeEditor("afis_buton.vhd", 162, 304); // be
+selectCodeEditor("afis_buton.vhd", 278, 176); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("afis_buton.vhd", 300, 151); // be
+selectCodeEditor("afis_buton.vhd", 146, 71); // be
+selectCodeEditor("afis_buton.vhd", 187, 72); // be
+selectCodeEditor("afis_buton.vhd", 177, 76); // be
+selectCodeEditor("afis_buton.vhd", 493, 77); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 1,310 MB. GUI used memory: 68 MB. Current time: 5/28/22, 5:09:03 PM EEST
+selectCodeEditor("afis_buton.vhd", 689, 76); // be
+selectCodeEditor("afis_buton.vhd", 684, 66); // be
+selectCodeEditor("afis_buton.vhd", 679, 69); // be
+selectCodeEditor("afis_buton.vhd", 678, 70, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+selectCodeEditor("afis_buton.vhd", 126, 96); // be
+selectCodeEditor("afis_buton.vhd", 314, 98); // be
+selectCodeEditor("afis_buton.vhd", 467, 92); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 61 seconds
+selectCodeEditor("afis_buton.vhd", 475, 212); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("afis_buton.vhd", 120, 193); // be
+selectCodeEditor("afis_buton.vhd", 198, 282); // be
+selectCodeEditor("afis_buton.vhd", 198, 282, false, false, false, false, true); // be - Double Click
+selectCodeEditor("afis_buton.vhd", 159, 261); // be
+selectCodeEditor("afis_buton.vhd", 261, 279); // be
+// Elapsed time: 67 seconds
+selectCodeEditor("afis_buton.vhd", 427, 281); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("afis_buton.vhd", 397, 298); // be
+selectCodeEditor("afis_buton.vhd", 54, 279); // be
+// Elapsed time: 92 seconds
+selectCodeEditor("afis_buton.vhd", 504, 129); // be
+selectCodeEditor("afis_buton.vhd", 502, 117); // be
+// Elapsed time: 25 seconds
+selectCodeEditor("afis_buton.vhd", 89, 179); // be
+selectCodeEditor("afis_buton.vhd", 452, 157); // be
+selectCodeEditor("afis_buton.vhd", 31, 175); // be
+selectCodeEditor("afis_buton.vhd", 146, 173); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectCodeEditor("afis_buton.vhd", 287, 186); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("afis_buton.vhd", 303, 210); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("afis_buton.vhd", 187, 257); // be
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectCodeEditor("afis_buton.vhd", 475, 221); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("afis_buton.vhd", 505, 216); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("afis_buton.vhd", 792, 243); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectCodeEditor("afis_buton.vhd", 199, 311); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("afis_buton.vhd", 479, 132); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectCodeEditor("afis_buton.vhd", 583, 139); // be
+selectCodeEditor("afis_buton.vhd", 575, 186); // be
+selectCodeEditor("afis_buton.vhd", 586, 137); // be
+selectCodeEditor("afis_buton.vhd", 526, 174); // be
+selectCodeEditor("afis_buton.vhd", 311, 134); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectCodeEditor("afis_buton.vhd", 139, 265); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+dismissDialog("Resetting Runs"); // bA
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat May 28 17:16:39 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Sat May 28 17:16:39 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1713 ms.
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'nradcif': port width = 2, actual width = 3 [C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/sources_1/new/afis_buton.vhd:108]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\adeli\Desktop\PROIECT_DULAP\proiectMODIF_2\test\test.srcs\sources_1\new\afis_buton.vhd;-;;-;16;-;line;-;108;-;;-;16;-;"); // ah
+selectCodeEditor("afis_buton.vhd", 423, 161); // be
+selectCodeEditor("afis_buton.vhd", 252, 195); // be
+selectCodeEditor("afis_buton.vhd", 254, 216); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bA
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat May 28 17:18:35 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Sat May 28 17:18:35 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED

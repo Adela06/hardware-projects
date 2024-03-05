@@ -1,0 +1,273 @@
+
+*** Running vivado
+    with args -log afis_buton.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source afis_buton.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source afis_buton.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/sem2/PSN/proiect/finalProiect/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/sem2/PSN/proiect/finalProiect/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top afis_buton -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12520
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'afis_buton' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:21]
+INFO: [Synth 8-3491] module 'debouncer_afis' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:5' bound to instance 'buton_adcif' of component 'debouncer_afis' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'debouncer_afis' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:11]
+INFO: [Synth 8-3491] module 'counter16b' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/counter16b.vhd:6' bound to instance 'p1' of component 'counter16b' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'counter16b' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/counter16b.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'counter16b' (1#1) [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/counter16b.vhd:12]
+INFO: [Synth 8-3491] module 'bistD_en' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/bistD_en.vhd:5' bound to instance 'p2' of component 'bistD_en' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'bistD_en' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/bistD_en.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'bistD_en' (2#1) [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/bistD_en.vhd:10]
+INFO: [Synth 8-3491] module 'bistD' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/bistD.vhd:5' bound to instance 'p3' of component 'bistD' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'bistD' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/bistD.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'bistD' (3#1) [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/bistD.vhd:10]
+INFO: [Synth 8-3491] module 'bistD' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/bistD.vhd:5' bound to instance 'p4' of component 'bistD' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'debouncer_afis' (4#1) [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:11]
+INFO: [Synth 8-3491] module 'debouncer_afis' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:5' bound to instance 'buton_reset' of component 'debouncer_afis' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:69]
+WARNING: [Synth 8-614] signal 'en_reset' is read in the process but is not in the sensitivity list [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:71]
+INFO: [Synth 8-3491] module 'numarator' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/numarator.vhd:6' bound to instance 'p1' of component 'numarator' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'numarator' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/numarator.vhd:17]
+INFO: [Synth 8-3491] module 'debouncer_afis' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:5' bound to instance 'buton1' of component 'debouncer_afis' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/numarator.vhd:32]
+INFO: [Synth 8-3491] module 'debouncer_afis' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:5' bound to instance 'buton2' of component 'debouncer_afis' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/numarator.vhd:33]
+INFO: [Synth 8-3491] module 'debouncer_afis' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:5' bound to instance 'button3' of component 'debouncer_afis' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/numarator.vhd:34]
+INFO: [Synth 8-3491] module 'debouncer_afis' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:5' bound to instance 'button4' of component 'debouncer_afis' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/numarator.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'numarator' (5#1) [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/numarator.vhd:17]
+INFO: [Synth 8-3491] module 'registru_12B' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/registru_12B.vhd:6' bound to instance 'p2' of component 'registru_12B' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'registru_12B' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/registru_12B.vhd:15]
+INFO: [Synth 8-3491] module 'debouncer_afis' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/debouncer_afis.vhd:5' bound to instance 'resetare' of component 'debouncer_afis' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/registru_12B.vhd:23]
+WARNING: [Synth 8-614] signal 'en_reset' is read in the process but is not in the sensitivity list [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/registru_12B.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'registru_12B' (6#1) [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/registru_12B.vhd:15]
+INFO: [Synth 8-3491] module 'afis_ssd' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_ssd.vhd:4' bound to instance 'p3' of component 'afis_ssd' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'afis_ssd' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_ssd.vhd:16]
+INFO: [Synth 8-3491] module 'counter16b' declared at 'D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/counter16b.vhd:6' bound to instance 'p1' of component 'counter16b' [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_ssd.vhd:27]
+INFO: [Synth 8-226] default block is never used [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_ssd.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'afis_ssd' (7#1) [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_ssd.vhd:16]
+WARNING: [Synth 8-614] signal 'en_reset' is read in the process but is not in the sensitivity list [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:92]
+WARNING: [Synth 8-614] signal 'caractere_distincte' is read in the process but is not in the sensitivity list [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'afis_buton' (8#1) [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/sources_1/new/afis_buton.vhd:21]
+WARNING: [Synth 8-7129] Port nr_anod[1] in module afis_ssd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nr_anod[0] in module afis_ssd is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1250.434 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/sem2/PSN/proiect/finalProiect/test/test.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/afis_buton_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/afis_buton_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1250.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1250.434 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    4 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   4 Input   12 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     2|
+|4     |LUT2   |     5|
+|5     |LUT3   |     3|
+|6     |LUT4   |    17|
+|7     |LUT5   |     9|
+|8     |LUT6   |    21|
+|9     |FDCE   |    18|
+|10    |FDPE   |     2|
+|11    |FDRE   |    61|
+|12    |FDSE   |     2|
+|13    |LDC    |     1|
+|14    |IBUF   |     5|
+|15    |OBUF   |    14|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1250.434 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.434 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1250.434 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1250.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instance 
+
+Synth Design complete, checksum: dc0fe234
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1250.434 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/sem2/PSN/proiect/finalProiect/test/test.runs/synth_1/afis_buton.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file afis_buton_utilization_synth.rpt -pb afis_buton_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 31 12:17:13 2022...

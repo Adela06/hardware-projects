@@ -1,0 +1,1587 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 11384
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri May 27 15:52:34 EEST 2022
+Time zone: 	Eastern European Standard Time (Europe/Athens)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	D:/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	adeli
+User home directory: C:/Users/adeli
+User working directory: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test
+User country: 	RO
+User language: 	ro
+User locale: 	ro_RO
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2021.2
+RDI_DATADIR: D:/Vivado/2021.2/data
+RDI_BINDIR: D:/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/adeli/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/adeli/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/adeli/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	D:/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/vivado.log
+Vivado journal file: 	C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/vivado.jou
+Engine tmp dir: 	C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/.Xil/Vivado-11384-Laptop-Adela
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2021.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/2021.2
+XILINX_VIVADO: D:/Vivado/2021.2
+XILINX_VIVADO_HLS: D:/Vivado/2021.2
+
+
+GUI allocated memory:	335 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,393 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\adeli\Desktop\PROIECT_DULAP\proiectMODIF_2\test\test.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,393 MB. GUI used memory: 56 MB. Current time: 5/27/22, 3:52:35 PM EEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 71 MB (+72080kb) [00:00:14]
+// [Engine Memory]: 1,393 MB (+1309288kb) [00:00:14]
+// [GUI Memory]: 113 MB (+40286kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  4320 ms.
+// Tcl Message: open_project C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2021.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 1607.441 ; gain = 0.000 
+// Project name: test; location: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 121 MB (+2011kb) [00:00:23]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), buton_adcif : debouncer_afis(arhit_deb) (debouncer_afis.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1455 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p4 : registru_12B(arch_registru_12B) (registru_12B.vhd)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p4 : registru_12B(arch_registru_12B) (registru_12B.vhd)]", 7, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1137 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p1 : numarator(arh_numarator) (numarator.vhd)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p1 : numarator(arh_numarator) (numarator.vhd), button4 : debouncer_afis(arhit_deb) (debouncer_afis.vhd)]", 8, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1215 ms.
+// Elapsed time: 159 seconds
+selectCodeEditor("numarator.vhd", 339, 2); // be
+// [GUI Memory]: 131 MB (+4532kb) [00:06:30]
+// WARNING: HEventQueue.dispatchEvent() is taking  2922 ms.
+// Elapsed time: 602 seconds
+selectCodeEditor("numarator.vhd", 295, 239); // be
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 1); // m
+// Elapsed time: 36 seconds
+selectCodeEditor("afis_buton.vhd", 93, 215); // be
+selectCodeEditor("afis_buton.vhd", 68, 242); // be
+// [GUI Memory]: 138 MB (+460kb) [00:15:47]
+selectCodeEditor("afis_buton.vhd", 251, 281); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 3); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p2 : numarator2(arh_numarator2) (numarator2.vhd)]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p2 : numarator2(arh_numarator2) (numarator2.vhd), buton2 : debouncer_afis(arhit_deb) (debouncer_afis.vhd)]", 11, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1118 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 17 seconds
+selectCodeEditor("numarator2.vhd", 344, 222); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("numarator2.vhd", 516, 218); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("numarator2.vhd", 583, 182); // be
+selectCodeEditor("numarator2.vhd", 386, 218); // be
+typeControlKey((HResource) null, "numarator2.vhd", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 3); // m
+selectCodeEditor("numarator.vhd", 346, 217); // be
+typeControlKey((HResource) null, "numarator.vhd", 'v'); // be
+selectCodeEditor("numarator.vhd", 345, 219); // be
+selectCodeEditor("numarator.vhd", 506, 217); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p2 : numarator2(arh_numarator2) (numarator2.vhd)]", 9); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p3 : numarator3(arh_numarator3) (numarator3.vhd)]", 10, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p3 : numarator3(arh_numarator3) (numarator3.vhd), buton1 : debouncer_afis(arhit_deb) (debouncer_afis.vhd)]", 11, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1095 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("numarator3.vhd", 352, 226); // be
+typeControlKey((HResource) null, "numarator3.vhd", 'v'); // be
+selectCodeEditor("numarator3.vhd", 509, 220); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 1); // m
+// Elapsed time: 10 seconds
+selectCodeEditor("afis_buton.vhd", 144, 92); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 5); // m
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 1); // m
+selectCodeEditor("afis_buton.vhd", 429, 120); // be
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri May 27 16:11:14 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 16:11:14 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 232 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ag
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 16:15:08 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 42 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, afis_buton(arhitect) (afis_buton.vhd), p3 : numarator3(arh_numarator3) (numarator3.vhd)]", 10); // D
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 13 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// WARNING: HEventQueue.dispatchEvent() is taking  1063 ms.
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2109 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 3 seconds
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2021.2   **** Build date : Oct 19 2021 at 03:13:30     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   
+// HMemoryUtils.trashcanNow. Engine heap size: 1,393 MB. GUI used memory: 83 MB. Current time: 5/27/22, 4:16:43 PM EEST
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2021.2.0   ****** Build date   : Sep 28 2021-00:44:20     **** Build number : 2021.2.1632779060       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:04 ; elapsed = 00:00:59 . Memory (MB): peak = 1607.441 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B46309A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  14193 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,307 MB. GUI used memory: 83 MB. Current time: 5/27/22, 4:18:07 PM EEST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:55 . Memory (MB): peak = 2877.438 ; gain = 1269.996 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2898.820 ; gain = 0.000 
+// [Engine Memory]: 2,310 MB (+888590kb) [00:25:56]
+// Elapsed time: 127 seconds
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 2898.820 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,310 MB. GUI used memory: 84 MB. Current time: 5/27/22, 4:18:53 PM EEST
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2905.332 ; gain = 6.512 
+// 'I' command handler elapsed time: 39 seconds
+// Elapsed time: 38 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 275 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 4); // m
+// Elapsed time: 167 seconds
+selectCodeEditor("numarator3.vhd", 691, 52); // be
+selectCodeEditor("numarator3.vhd", 605, 89); // be
+selectCodeEditor("numarator3.vhd", 451, 171); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("numarator3.vhd", 517, 248); // be
+// Elapsed time: 18 seconds
+selectCodeEditor("numarator3.vhd", 495, 234); // be
+selectCodeEditor("numarator3.vhd", 499, 190); // be
+selectCodeEditor("numarator3.vhd", 423, 150); // be
+selectCodeEditor("numarator3.vhd", 502, 209); // be
+selectCodeEditor("numarator3.vhd", 480, 252); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator2.vhd", 3); // m
+selectCodeEditor("numarator2.vhd", 554, 233); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+// Elapsed time: 169 seconds
+selectCodeEditor("afis_buton.vhd", 124, 88); // be
+// Elapsed time: 31 seconds
+selectCodeEditor("afis_buton.vhd", 121, 95); // be
+// Elapsed time: 48 seconds
+selectCodeEditor("afis_buton.vhd", 283, 96); // be
+selectCodeEditor("afis_buton.vhd", 142, 180); // be
+selectCodeEditor("afis_buton.vhd", 194, 182); // be
+selectCodeEditor("afis_buton.vhd", 150, 180); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator2.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectCodeEditor("afis_buton.vhd", 382, 164); // be
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1391 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectCodeEditor("afis_buton.vhd", 275, 166); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectCodeEditor("afis_buton.vhd", 378, 87); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+selectCodeEditor("afis_buton.vhd", 109, 174); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("afis_buton.vhd", 185, 184); // be
+selectCodeEditor("afis_buton.vhd", 194, 122); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("afis_buton.vhd", 194, 140); // be
+selectCodeEditor("afis_buton.vhd", 108, 120); // be
+selectCodeEditor("afis_buton.vhd", 114, 82); // be
+selectCodeEditor("afis_buton.vhd", 154, 124); // be
+selectCodeEditor("afis_buton.vhd", 193, 141); // be
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // D
+selectCodeEditor("afis_buton.vhd", 220, 161); // be
+selectCodeEditor("afis_buton.vhd", 233, 137); // be
+// Elapsed time: 21 seconds
+selectCodeEditor("afis_buton.vhd", 251, 202); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("afis_buton.vhd", 67, 262); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectCodeEditor("afis_buton.vhd", 308, 236); // be
+// Elapsed time: 22 seconds
+selectCodeEditor("afis_buton.vhd", 329, 256); // be
+selectCodeEditor("afis_buton.vhd", 332, 292); // be
+// Elapsed time: 24 seconds
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 16:34:54 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 16:34:54 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 146 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin anozi_OBUF[3] with 1st driver pin 'anozi_reg[3]/Q' [C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/sources_1/new/afis_buton.vhd:112]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\adeli\Desktop\PROIECT_DULAP\proiectMODIF_2\test\test.srcs\sources_1\new\afis_buton.vhd;-;;-;16;-;line;-;112;-;;-;16;-;"); // ah
+selectCodeEditor("afis_buton.vhd", 249, 237); // be
+selectCodeEditor("afis_buton.vhd", 241, 244); // be
+// Elapsed time: 668 seconds
+selectCodeEditor("afis_buton.vhd", 525, 131); // be
+selectCodeEditor("afis_buton.vhd", 254, 234); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 2,310 MB. GUI used memory: 76 MB. Current time: 5/27/22, 4:49:00 PM EEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+dismissDialog("Resetting Runs"); // bA
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 16:49:12 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 16:49:12 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 161 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2928.039 ; gain = 0.000 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,310 MB. GUI used memory: 77 MB. Current time: 5/27/22, 4:52:26 PM EEST
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 2929.508 ; gain = 1.469 
+// 'I' command handler elapsed time: 34 seconds
+// Elapsed time: 33 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 56 seconds
+selectCodeEditor("afis_buton.vhd", 70, 157); // be
+selectCodeEditor("afis_buton.vhd", 161, 263); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'c'); // be
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // D
+selectCodeEditor("afis_buton.vhd", 277, 115); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+selectButton(RDIResource.HInputHandler_REFORMAT_CODE, (String) null); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 16:53:46 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 104 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 16:55:35 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 16:55:35 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 110 seconds
+selectCodeEditor("afis_buton.vhd", 410, 128); // be
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 101 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 2929.508 ; gain = 0.000 
+// 'I' command handler elapsed time: 19 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 38 seconds
+selectCodeEditor("afis_buton.vhd", 676, 221); // be
+selectCodeEditor("afis_buton.vhd", 676, 241); // be
+selectCodeEditor("afis_buton.vhd", 494, 204); // be
+selectCodeEditor("afis_buton.vhd", 496, 214); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 17:00:18 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 17:00:18 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 49 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 0); // D
+selectTab((HResource) null, (HResource) null, "Hardware", 1); // aL
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 125 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ag
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 17:03:21 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1, Design Checkpoint]", 2); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, debouncer_afis.vhd]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, debouncer_afis.vhd]", 7, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  3150 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("debouncer_afis.vhd", 118, 110); // be
+selectCodeEditor("debouncer_afis.vhd", 185, 100); // be
+// Elapsed time: 14 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+selectCodeEditor("debouncer_afis.vhd", 1027, 167); // be
+selectCodeEditor("debouncer_afis.vhd", 328, 25); // be
+selectCodeEditor("debouncer_afis.vhd", 89, 607); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2929.508 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 9 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 13 seconds
+selectCodeEditor("debouncer_afis.vhd", 362, 109); // be
+// Elapsed time: 80 seconds
+selectCodeEditor("debouncer_afis.vhd", 987, 475); // be
+selectCodeEditor("debouncer_afis.vhd", 504, 96); // be
+// Elapsed time: 37 seconds
+selectCodeEditor("debouncer_afis.vhd", 484, 256); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("debouncer_afis.vhd", 298, 387); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+// Elapsed time: 48 seconds
+selectCodeEditor("afis_buton.vhd", 762, 283); // be
+selectCodeEditor("afis_buton.vhd", 832, 376); // be
+selectCodeEditor("afis_buton.vhd", 580, 388); // be
+selectCodeEditor("afis_buton.vhd", 213, 295); // be
+selectCodeEditor("afis_buton.vhd", 204, 262); // be
+selectCodeEditor("afis_buton.vhd", 173, 294); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectCodeEditor("afis_buton.vhd", 673, 234); // be
+selectCodeEditor("afis_buton.vhd", 664, 157); // be
+selectCodeEditor("afis_buton.vhd", 612, 215); // be
+selectCodeEditor("afis_buton.vhd", 656, 192); // be
+selectCodeEditor("afis_buton.vhd", 422, 280); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// Elapsed time: 17 seconds
+selectCodeEditor("numarator.vhd", 115, 100); // be
+selectCodeEditor("numarator.vhd", 115, 100, false, false, false, false, true); // be - Double Click
+selectCodeEditor("numarator.vhd", 311, 165); // be
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectCodeEditor("afis_buton.vhd", 155, 289); // be
+selectCodeEditor("afis_buton.vhd", 105, 170); // be
+selectCodeEditor("afis_buton.vhd", 35, 144); // be
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // D
+selectCodeEditor("afis_buton.vhd", 277, 253); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 17:10:00 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("afis_buton.vhd", 39, 267); // be
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Cancel Implementation"); // aV
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aV
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// Elapsed time: 10 seconds
+selectCodeEditor("numarator.vhd", 443, 217); // be
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator2.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+// Elapsed time: 15 seconds
+selectCodeEditor("afis_buton.vhd", 739, 289); // be
+selectCodeEditor("afis_buton.vhd", 392, 157); // be
+selectCodeEditor("afis_buton.vhd", 514, 325); // be
+// Elapsed time: 20 seconds
+selectCodeEditor("afis_buton.vhd", 622, 135); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 49 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator2.vhd", 3); // m
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+// Elapsed time: 19 seconds
+selectCodeEditor("afis_buton.vhd", 648, 135); // be
+selectCodeEditor("afis_buton.vhd", 648, 135, false, false, false, false, true); // be - Double Click
+selectCodeEditor("afis_buton.vhd", 663, 158); // be
+selectCodeEditor("afis_buton.vhd", 663, 158, false, false, false, false, true); // be - Double Click
+selectCodeEditor("afis_buton.vhd", 661, 178); // be
+selectCodeEditor("afis_buton.vhd", 661, 178, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 4); // m
+selectCodeEditor("numarator3.vhd", 663, 137); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("afis_buton.vhd", 924, 115); // be
+// Elapsed time: 19 seconds
+selectCodeEditor("afis_buton.vhd", 178, 352); // be
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // D
+selectCodeEditor("afis_buton.vhd", 297, 198); // be
+selectCodeEditor("afis_buton.vhd", 866, 124); // be
+selectCodeEditor("afis_buton.vhd", 234, 260); // be
+selectCodeEditor("afis_buton.vhd", 120, 163); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("afis_buton.vhd", 217, 282); // be
+selectCodeEditor("afis_buton.vhd", 237, 162); // be
+selectCodeEditor("afis_buton.vhd", 196, 129); // be
+selectCodeEditor("afis_buton.vhd", 248, 165); // be
+selectCodeEditor("afis_buton.vhd", 222, 155); // be
+selectCodeEditor("afis_buton.vhd", 273, 156); // be
+selectCodeEditor("afis_buton.vhd", 182, 131); // be
+selectCodeEditor("afis_buton.vhd", 230, 146); // be
+selectCodeEditor("afis_buton.vhd", 201, 168); // be
+selectCodeEditor("afis_buton.vhd", 241, 170); // be
+selectCodeEditor("afis_buton.vhd", 183, 166); // be
+selectCodeEditor("afis_buton.vhd", 233, 158); // be
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator2.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer_afis.vhd", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 4); // m
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, afis_ssd.vhd]", 3, false); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, afis_ssd.vhd]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, afis_ssd.vhd]", 3, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1130 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 12 seconds
+selectCodeEditor("afis_ssd.vhd", 67, 220); // be
+typeControlKey((HResource) null, "afis_ssd.vhd", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectCodeEditor("afis_buton.vhd", 190, 221); // be
+typeControlKey((HResource) null, "afis_buton.vhd", 'v'); // be
+// Elapsed time: 20 seconds
+selectCodeEditor("afis_buton.vhd", 169, 280); // be
+selectCodeEditor("afis_buton.vhd", 136, 176); // be
+selectCodeEditor("afis_buton.vhd", 155, 281); // be
+selectCodeEditor("afis_buton.vhd", 683, 249); // be
+selectCodeEditor("afis_buton.vhd", 646, 274); // be
+selectCodeEditor("afis_buton.vhd", 683, 262); // be
+selectCodeEditor("afis_buton.vhd", 293, 239); // be
+selectCodeEditor("afis_buton.vhd", 356, 243); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 146 MB (+657kb) [01:24:35]
+selectCodeEditor("afis_buton.vhd", 120, 288); // be
+selectCodeEditor("afis_buton.vhd", 77, 296); // be
+selectCodeEditor("afis_buton.vhd", 290, 294); // be
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 17:17:20 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 17:17:20 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,310 MB. GUI used memory: 77 MB. Current time: 5/27/22, 5:22:28 PM EEST
+// Elapsed time: 676 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 2948.570 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 2948.570 ; gain = 0.000 
+// 'I' command handler elapsed time: 28 seconds
+// Elapsed time: 27 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 143 seconds
+selectCodeEditor("afis_buton.vhd", 38, 322); // be
+selectCodeEditor("afis_buton.vhd", 37, 345); // be
+selectCodeEditor("afis_buton.vhd", 307, 270); // be
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_ssd.vhd", 6); // m
+selectCodeEditor("afis_ssd.vhd", 591, 202); // be
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 31 seconds
+selectCodeEditor("afis_buton.vhd", 56, 90); // be
+selectCodeEditor("afis_buton.vhd", 58, 71); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectCodeEditor("registru_12B.vhd", 334, 112); // be
+selectCodeEditor("registru_12B.vhd", 505, 115); // be
+selectCodeEditor("registru_12B.vhd", 505, 115, false, false, false, false, true); // be - Double Click
+selectCodeEditor("registru_12B.vhd", 469, 325); // be
+selectCodeEditor("registru_12B.vhd", 481, 323); // be
+selectCodeEditor("registru_12B.vhd", 481, 323, false, false, false, false, true); // be - Double Click
+selectCodeEditor("registru_12B.vhd", 553, 321); // be
+selectCodeEditor("registru_12B.vhd", 457, 340); // be
+selectCodeEditor("registru_12B.vhd", 494, 268); // be
+selectCodeEditor("registru_12B.vhd", 539, 346); // be
+selectCodeEditor("registru_12B.vhd", 460, 366); // be
+selectCodeEditor("registru_12B.vhd", 553, 352); // be
+selectCodeEditor("registru_12B.vhd", 546, 357); // be
+selectCodeEditor("registru_12B.vhd", 515, 349); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("registru_12B.vhd", 522, 281); // be
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectCodeEditor("afis_buton.vhd", 500, 68); // be
+selectCodeEditor("afis_buton.vhd", 403, 162); // be
+selectCodeEditor("afis_buton.vhd", 356, 222); // be
+selectCodeEditor("afis_buton.vhd", 356, 222, false, false, false, false, true); // be - Double Click
+selectCodeEditor("afis_buton.vhd", 124, 242); // be
+selectCodeEditor("afis_buton.vhd", 33, 159); // be
+selectCodeEditor("afis_buton.vhd", 32, 177); // be
+selectCodeEditor("afis_buton.vhd", 578, 134); // be
+selectCodeEditor("afis_buton.vhd", 691, 127); // be
+selectCodeEditor("afis_buton.vhd", 695, 136); // be
+selectCodeEditor("afis_buton.vhd", 570, 234); // be
+selectCodeEditor("afis_buton.vhd", 426, 99); // be
+selectCodeEditor("afis_buton.vhd", 426, 99, false, false, false, false, true); // be - Double Click
+selectCodeEditor("afis_buton.vhd", 599, 86); // be
+selectCodeEditor("afis_buton.vhd", 599, 86, false, false, false, false, true); // be - Double Click
+selectCodeEditor("afis_buton.vhd", 585, 129); // be
+selectCodeEditor("afis_buton.vhd", 423, 272); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 17:35:18 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 17:35:18 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 47 seconds
+selectCodeEditor("afis_buton.vhd", 302, 148); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 110 seconds
+selectCodeEditor("afis_buton.vhd", 311, 210); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 23 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ag
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 17:38:20 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 61 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// Elapsed time: 15 seconds
+selectCodeEditor("numarator.vhd", 435, 155); // be
+selectCodeEditor("numarator.vhd", 386, 83); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 27 17:40:18 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 17:40:18 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 128 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ag
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 17:42:27 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2948.570 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2948.570 ; gain = 0.000 
+// 'I' command handler elapsed time: 23 seconds
+// Elapsed time: 22 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 321 seconds
+selectCodeEditor("numarator.vhd", 313, 221); // be
+// Elapsed time: 105 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectCodeEditor("afis_buton.vhd", 490, 260); // be
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 2,310 MB. GUI used memory: 76 MB. Current time: 5/27/22, 5:52:28 PM EEST
+// Elapsed time: 70 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_ssd.vhd", 6); // m
+// Elapsed time: 28 seconds
+selectCodeEditor("afis_ssd.vhd", 519, 108); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("afis_ssd.vhd", 578, 110); // be
+selectCodeEditor("afis_ssd.vhd", 522, 122); // be
+typeControlKey((HResource) null, "afis_ssd.vhd", 'c'); // be
+selectCodeEditor("afis_ssd.vhd", 517, 133); // be
+typeControlKey((HResource) null, "afis_ssd.vhd", 'v'); // be
+selectCodeEditor("afis_ssd.vhd", 516, 157); // be
+typeControlKey((HResource) null, "afis_ssd.vhd", 'v'); // be
+selectCodeEditor("afis_ssd.vhd", 647, 147); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// Elapsed time: 16 seconds
+selectCodeEditor("numarator.vhd", 136, 198); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 27 17:54:27 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 17:54:27 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 142 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ag
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 17:56:50 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 55 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2951.973 ; gain = 0.000 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2951.973 ; gain = 0.000 
+// 'I' command handler elapsed time: 21 seconds
+// Elapsed time: 20 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator2.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_ssd.vhd", 6); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// Elapsed time: 81 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator3.vhd", 4); // m
+selectCodeEditor("numarator3.vhd", 551, 450); // be
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_ssd.vhd", 3); // m
+selectCodeEditor("afis_ssd.vhd", 522, 114); // be
+selectCodeEditor("afis_ssd.vhd", 514, 138); // be
+selectCodeEditor("afis_ssd.vhd", 515, 156); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 18:00:30 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 73 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 18:01:46 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 18:01:46 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 156 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 2951.973 ; gain = 0.000 
+// 'I' command handler elapsed time: 16 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 36 seconds
+selectCodeEditor("afis_ssd.vhd", 495, 66); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("afis_ssd.vhd", 531, 120); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+// Elapsed time: 17 seconds
+selectCodeEditor("afis_buton.vhd", 510, 307); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("afis_buton.vhd", 632, 251); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 27 18:06:27 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 18:06:27 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 127 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ag
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 18:08:35 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectCodeEditor("registru_12B.vhd", 490, 272); // be
+selectCodeEditor("registru_12B.vhd", 577, 335); // be
+selectCodeEditor("registru_12B.vhd", 548, 266); // be
+selectCodeEditor("registru_12B.vhd", 508, 332); // be
+selectCodeEditor("registru_12B.vhd", 369, 329); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2951.973 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2951.973 ; gain = 0.000 
+// 'I' command handler elapsed time: 20 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Program Device"); // bA
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "afis_buton.vhd", 0); // m
+selectCodeEditor("afis_buton.vhd", 543, 219); // be
+selectCodeEditor("afis_buton.vhd", 429, 198); // be
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "registru_12B.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "numarator.vhd", 2); // m
+// Elapsed time: 14 seconds
+selectCodeEditor("numarator.vhd", 161, 160); // be
+selectCodeEditor("numarator.vhd", 161, 160, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 18:10:43 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 122 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 18:12:49 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 18:12:49 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 158 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/afis_buton.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 2951.973 ; gain = 0.000 
+// 'I' command handler elapsed time: 19 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Program Device"); // bA
+selectCodeEditor("numarator.vhd", 167, 159); // be
+selectCodeEditor("numarator.vhd", 167, 159, false, false, false, false, true); // be - Double Click
+selectCodeEditor("numarator.vhd", 374, 144); // be
+selectCodeEditor("numarator.vhd", 354, 160); // be
+selectCodeEditor("numarator.vhd", 533, 106); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("numarator.vhd", 302, 324); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 27 18:16:31 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 77 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.srcs/utils_1/imports/synth_1/afis_buton.dcp with file C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/afis_buton.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 27 18:17:51 2022] Launched synth_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/synth_1/runme.log [Fri May 27 18:17:51 2022] Launched impl_1... Run output will be captured here: C:/Users/adeli/Desktop/PROIECT_DULAP/proiectMODIF_2/test/test.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
